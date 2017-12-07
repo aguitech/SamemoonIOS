@@ -19,5 +19,83 @@
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../SameMoon_iOS/samemoon/samemoon/HomeController.swift"
+            timestampString = "534327148.561863"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "HomeController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "samemoon.HomeController.tableVeterinarias.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITableView&gt;"
+                  moduleName = "samemoon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hectoraguilar/Git/SameMoon_iOS/samemoon/samemoon/HomeController.swift"
+                  timestampString = "534326710.757615"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "samemoon.HomeController.tableVeterinarias.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UITableView&gt;"
+                  moduleName = "samemoon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hectoraguilar/Git/SameMoon_iOS/samemoon/samemoon/HomeController.swift"
+                  timestampString = "534326710.772978"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "samemoon.HomeController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; samemoon.HomeController"
+                  moduleName = "samemoon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hectoraguilar/Git/SameMoon_iOS/samemoon/samemoon/HomeController.swift"
+                  timestampString = "534326710.775954"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "952">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "samemoon.HomeController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;samemoon.HomeController&gt;"
+                  moduleName = "samemoon"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hectoraguilar/Git/SameMoon_iOS/samemoon/samemoon/HomeController.swift"
+                  timestampString = "534326710.77902"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "900">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
