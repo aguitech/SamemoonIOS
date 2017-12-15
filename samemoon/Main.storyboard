@@ -1135,7 +1135,7 @@
                         <viewControllerLayoutGuide type="bottom" id="s9h-N7-kHS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Wn3-69-7Ah">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="608"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUQ-cZ-5ir">
@@ -5476,10 +5476,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5J7-Xh-3cD">
-                                <frame key="frameInset" minX="108" minY="407" width="105" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l3J-Ha-6P7">
+                                <frame key="frameInset" minX="40" minY="460" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Abrir Cámara"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9u-Vu-vXc">
+                                <frame key="frameInset" minX="156" minY="400" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="accederCamara:" destination="Imh-aG-NHK" eventType="touchUpInside" id="8EY-eM-psT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -5488,6 +5495,7 @@
                     <size key="freeformSize" width="320" height="608"/>
                     <connections>
                         <outlet property="fechaHoraEvento" destination="Dnq-Rp-e4E" id="Gpw-5u-OFF"/>
+                        <outlet property="imagePicked" destination="l3J-Ha-6P7" id="Mnd-tg-HCI"/>
                         <outlet property="tituloMoonie" destination="Ddz-5h-oxf" id="eGP-hY-Vg3"/>
                         <outlet property="usuariosInvitados" destination="per-lU-vPf" id="59q-mM-ZOK"/>
                     </connections>
@@ -5571,14 +5579,14 @@
         <image name="tituloSamemoon.png" width="124" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Vo5-H3-nft"/>
         <segue reference="Aac-eE-ETc"/>
-        <segue reference="evz-kB-d9X"/>
-        <segue reference="kPC-0k-edi"/>
+        <segue reference="Cdm-iD-bhH"/>
+        <segue reference="Vo5-H3-nft"/>
+        <segue reference="pSy-ez-05N"/>
         <segue reference="ma5-Qx-n1E"/>
+        <segue reference="kPC-0k-edi"/>
         <segue reference="5qW-L7-9g0"/>
         <segue reference="k5y-Or-Flx"/>
-        <segue reference="pSy-ez-05N"/>
         <segue reference="48o-D6-X3J"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -8,7 +8,10 @@
 
 import UIKit
 
-class DetalleEventoViewController: UIViewController {
+class DetalleEventoViewController: UIViewController, UIImagePickerControllerDelegate,
+UINavigationControllerDelegate {
+    
+    
     
     var idt:Int?
     //var veterinaria:Int?
@@ -16,6 +19,7 @@ class DetalleEventoViewController: UIViewController {
     var idevento:Int?
 
     
+    @IBOutlet weak var imagePicked: UIImageView!
     
     @IBOutlet weak var tituloMoonie: UILabel!
     @IBOutlet weak var fechaHoraEvento: UILabel!
@@ -79,6 +83,16 @@ class DetalleEventoViewController: UIViewController {
     }
     
    
+    @IBAction func accederCamara(sender: AnyObject) {
+        if UIImagePickerController.isSourceTypeAvailable(.Camera) {
+            var imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .Camera;
+            imagePicker.allowsEditing = false
+            self.presentViewController(imagePicker, animated: true, completion: nil)
+        }
+    }
+    
     @IBAction func agregarCarrito(sender: UIButton) {
     }
     
