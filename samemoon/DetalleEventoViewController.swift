@@ -2,29 +2,51 @@
 //  DetalleTiendaViewController.swift
 //  zungu
 //
-//  Created by Héctor Aguilar on 09/09/16.
-//  Copyright © 2017 Héctor Aguilar. All rights reserved.
+//  Created by Giovanni Aranda on 09/09/16.
+//  Copyright © 2016 Giovanni Aranda. All rights reserved.
 //
 
 import UIKit
 
-class DetalleTiendaViewController: UIViewController {
+class DetalleEventoViewController: UIViewController {
     
     var idt:Int?
-    var veterinaria:Int?
+    //var veterinaria:Int?
+    //BUSCAR VETERINARIA
+    var idevento:Int?
 
+    
+    
+    @IBOutlet weak var tituloMoonie: UILabel!
+    @IBOutlet weak var fechaHoraEvento: UILabel!
+    @IBOutlet weak var usuariosInvitados: UILabel!
+    /*
+     @IBOutlet weak var tituloMoonie: UILabel!
+     @IBOutlet weak var fechaHora: UILabel!
+     
+     @IBOutlet weak var nombreTienda: UILabel!
+     @IBOutlet weak var precioTienda: UILabel!
+     
     @IBOutlet weak var btnAgregar: UIButton!
     @IBOutlet weak var btnCancelar: UIButton!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tituloVeterinaria: UILabel!
     @IBOutlet weak var imageTienda: UIImageView!
-    @IBOutlet weak var nombreTIenda: UILabel!
+    
+    
+    
+    @IBOutlet weak var nombreTienda: UILabel!
     @IBOutlet weak var precioTienda: UILabel!
+    
+    */
+    //@IBOutlet weak var nombreTIenda: UILabel!
+    //@IBOutlet weak var precioTienda: UILabel!
     var Array:[String: String] = [String: String]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        /*
         searchBar.backgroundImage = UIImage()
         searchBar.layer.borderWidth = 1
         searchBar.layer.borderColor = UIColor.grayColor().CGColor
@@ -40,12 +62,17 @@ class DetalleTiendaViewController: UIViewController {
         
         btnAgregar.layer.cornerRadius = 6
         
-        if idt != nil{
+        
+        */
+        //print(idt);
+        print("idEVENTO");
+        print(idevento!);
+        if (idevento != nil){
             cargarDatos()
         }
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -56,21 +83,43 @@ class DetalleTiendaViewController: UIViewController {
     }
     
     func cargarDatos(){
-        let url = NSURL(string: "http://hyperion.init-code.com/zungu/app/tienda.php?idt=\(idt!)")
+        //let url = NSURL(string: "http://hyperion.init-code.com/zungu/app/tienda.php?idt=\(idt!)")
+        //let url = NSURL(string: "http://aguitech.com/samemoon/cobradores/ios_evento_detalle.php")
+        //let url = NSURL(string: "http://aguitech.com/samemoon/cobradores/app_tienda.php")
+        let url = NSURL(string: "http://aguitech.com/samemoon/cobradores/ios_detalle_evento.php?idevento=\(idevento!)")
+        
+
+        //print("\(id_usuario)")
+        
+        print(url!);
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) { (data, response, error) in
             if error != nil{
-                
+                //print("errores")
                 print(error)
                 
             }else{
+                //print("dentro X")
+                
                 if let jsonResult = try? NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers){
                     
+                    //self.Array = jsonResult as! NSDictionary as! [String : String]
+                    //self.Array = jsonResult as! NSArray as! [String : String]
                     self.Array = jsonResult as! NSDictionary as! [String : String]
+                    
+                    
+                    
+                    //print(jsonResult);
                     
                     dispatch_async(dispatch_get_main_queue(), {
                         
-                        self.nombreTIenda.text = self.Array["nombre"]
-                        self.precioTienda.text = self.Array["precio"]
+                        self.tituloMoonie.text = self.Array["evento"]
+                        self.fechaHoraEvento.text = self.Array["fecha"]
+                        self.usuariosInvitados.text = self.Array["hora"]
+                        
+                        //print(self.Array["id_evento"]);
+                        
+                        /*
+                        
                         
                         let imagenPatrocinador = "http://hyperion.init-code.com/zungu/imagen_tienda/\(self.Array["imagen"]!)"
                         
@@ -81,6 +130,8 @@ class DetalleTiendaViewController: UIViewController {
                         }else{
                             print("no pudo")
                         }
+                        */
+ 
                         
                         //self.imagenPatrocinio.image = UIImage(data: data)
                         return

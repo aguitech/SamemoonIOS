@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import CoreLocation
 
-var tipo:Int = 1
+//var tipo:Int = 1
 
 class VeterinariasViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate,UISearchBarDelegate {
     

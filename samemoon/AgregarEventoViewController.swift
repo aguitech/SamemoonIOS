@@ -11,21 +11,31 @@ import UIKit
 class AgregarEventoViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
     
     
-
+    @IBOutlet weak var nombreEvento: UITextField!
     
+    @IBOutlet weak var descripcionEvento: UITextField!
     @IBOutlet weak var fechaPicker: UIDatePicker!
+    
+    
+    //@IBOutlet weak var fechaPicker: UIDatePicker!
+    /*
     @IBOutlet weak var motivo5: UIButton!
     @IBOutlet weak var motivo4: UIButton!
     @IBOutlet weak var motivo3: UIButton!
     @IBOutlet weak var motivo2: UIButton!
     @IBOutlet weak var motivo1: UIButton!
-    @IBOutlet weak var doctoresSelect: UITextField!
-    @IBOutlet weak var textOtro: UITextField!
+     
+     @IBOutlet weak var doctoresSelect: UITextField!
+     @IBOutlet weak var textOtro: UITextField!
+
+     */
+    
     var ArrayList = [[String: String]]()
     let pickerView = UIPickerView()
-    var idvet:Int? = nil
+    //var idvet:Int? = nil
     var idDoctor = 0
     var motivo = 0
+    //var fecha:String?
     var fecha:String?
     var idu = 0
     var strOtro = ""
@@ -39,8 +49,8 @@ class AgregarEventoViewController: UIViewController,UIPickerViewDelegate,UIPicke
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(AgendarCitaViewController.keyboardWillShow(_:)), name: UIKeyboardWillShowNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(AgendarCitaViewController.keyboardWillHide(_:)), name: UIKeyboardWillHideNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(AgregarEventoViewController.keyboardWillShow(_:)), name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(AgregarEventoViewController.keyboardWillHide(_:)), name: UIKeyboardWillHideNotification, object: nil)
         
         if preferences.objectForKey(currentLevelKey) == nil {
         } else {
@@ -53,24 +63,6 @@ class AgregarEventoViewController: UIViewController,UIPickerViewDelegate,UIPicke
         pickerView.delegate = self
         pickerView.backgroundColor = UIColor.whiteColor()
         
-        
-        doctoresSelect.inputView = pickerView
-        
-        let toolBar = UIToolbar(frame: CGRectMake(0, self.view.frame.size.height/6, self.view.frame.size.width, 40.0))
-        toolBar.layer.position = CGPoint(x: self.view.frame.size.width/2, y: self.view.frame.size.height-20.0)
-        
-        toolBar.barStyle = UIBarStyle.BlackTranslucent
-        
-        toolBar.tintColor = UIColor.whiteColor()
-        
-        toolBar.backgroundColor = UIColor.grayColor()
-        
-        let defaultButton = UIBarButtonItem(title: "Default", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(self.tappedToolBarBtn))
-        
-        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Done, target: self, action: #selector(self.donePressed))
-        
-        let flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: self, action: nil)
-        
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width / 3, height: self.view.frame.size.height))
         
         label.font = UIFont(name: "Helvetica", size: 12)
@@ -82,50 +74,10 @@ class AgregarEventoViewController: UIViewController,UIPickerViewDelegate,UIPicke
         label.text = "Selecciona uno"
         
         label.textAlignment = NSTextAlignment.Center
-        
-        let textBtn = UIBarButtonItem(customView: label)
-        
-        toolBar.setItems([defaultButton,flexSpace,textBtn,flexSpace,doneButton], animated: true)
-        
-        doctoresSelect.inputAccessoryView = toolBar
-        
-        cargaDatos()
+        //cargaDatos()
 
         // Do any additional setup after loading the view.
     }
-    
-    func cargaDatos(){
-        let url = NSURL(string: "http://hyperion.init-code.com/zungu/app/doctores.php?vet=\(idvet!)")
-        let task = NSURLSession.sharedSession().dataTaskWithURL(url!) { (data, response, error) in
-            if error != nil{
-                
-                print(error)
-                
-            }else{
-                if let jsonResult = try? NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers){
-                    
-                    //self.ArrayList = [[String: String]]()
-                    if let items = jsonResult as? [[String: String]]{
-                        print(items)
-                        for item in items{
-                            self.ArrayList.append(item)
-                        }
-                        
-                    }
-                    dispatch_async(dispatch_get_main_queue(), {
-                      print(self.ArrayList)
-                        self.pickerView.reloadAllComponents()
-                        
-                        return
-                    })
-                    
-                }
-            }
-        }
-        
-        task.resume()
-    }
-
     
     
     override func didReceiveMemoryWarning() {
@@ -145,23 +97,8 @@ class AgregarEventoViewController: UIViewController,UIPickerViewDelegate,UIPicke
         return ArrayList[row]["nombre"]
     }
     
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        doctoresSelect.text = ArrayList[row]["nombre"]
-        idDoctor = Int(ArrayList[row]["id_doctor"]!)!
-    }
     
-    func tappedToolBarBtn(sender: UIBarButtonItem) {
-        
-        doctoresSelect.text = "Doctor / Doctora"
-        
-        doctoresSelect.resignFirstResponder()
-    }
-    
-    func donePressed(sender: UIBarButtonItem) {
-        
-        doctoresSelect.resignFirstResponder()
-        
-    }
+   
     
     @IBAction func changeFecha(sender: UIDatePicker) {
         let dateFormatter = NSDateFormatter()
@@ -170,63 +107,11 @@ class AgregarEventoViewController: UIViewController,UIPickerViewDelegate,UIPicke
         self.fecha = strDate
     }
     
-    @IBAction func accionMotivo1(sender: UIButton) {
-        self.motivo = 1
-       
-        self.motivo1.setImage(UIImage(named:"button-selected"), forState: UIControlState.Normal)
-        self.motivo2.setImage(UIImage(named:"prendido2"), forState: UIControlState.Normal)
-        self.motivo3.setImage(UIImage(named:"prendido2"), forState: UIControlState.Normal)
-        self.motivo4.setImage(UIImage(named:"prendido2"), forState: UIControlState.Normal)
-        self.motivo5.setImage(UIImage(named:"prendido2"), forState: UIControlState.Normal)
-        
-    }
     
-    @IBAction func accionMotivo2(sender: UIButton) {
-        self.motivo = 2
-       
-        self.motivo1.setImage(UIImage(named:"prendido2"), forState: UIControlState.Normal)
-        self.motivo2.setImage(UIImage(named:"button-selected"), forState: UIControlState.Normal)
-        self.motivo3.setImage(UIImage(named:"prendido2"), forState: UIControlState.Normal)
-        self.motivo4.setImage(UIImage(named:"prendido2"), forState: UIControlState.Normal)
-        self.motivo5.setImage(UIImage(named:"prendido2"), forState: UIControlState.Normal)
-    }
     
-    @IBAction func accionMotivo3(sender: UIButton) {
-        self.motivo = 3
-        
-        self.motivo1.setImage(UIImage(named:"prendido2"), forState: UIControlState.Normal)
-        self.motivo2.setImage(UIImage(named:"prendido2"), forState: UIControlState.Normal)
-        self.motivo3.setImage(UIImage(named:"button-selected"), forState: UIControlState.Normal)
-        self.motivo4.setImage(UIImage(named:"prendido2"), forState: UIControlState.Normal)
-        self.motivo5.setImage(UIImage(named:"prendido2"), forState: UIControlState.Normal)
-
-    }
-    
-    @IBAction func accionMotivo4(sender: UIButton) {
-        self.motivo = 4
-       
-        self.motivo1.setImage(UIImage(named:"prendido2"), forState: UIControlState.Normal)
-        self.motivo2.setImage(UIImage(named:"prendido2"), forState: UIControlState.Normal)
-        self.motivo3.setImage(UIImage(named:"prendido2"), forState: UIControlState.Normal)
-        self.motivo4.setImage(UIImage(named:"button-selected"), forState: UIControlState.Normal)
-        self.motivo5.setImage(UIImage(named:"prendido2"), forState: UIControlState.Normal)
-    }
-    @IBAction func accionMotivo5(sender: UIButton) {
-        self.motivo = 5
-        self.motivo1.setImage(UIImage(named:"prendido2"), forState: UIControlState.Normal)
-        self.motivo2.setImage(UIImage(named:"prendido2"), forState: UIControlState.Normal)
-        self.motivo3.setImage(UIImage(named:"prendido2"), forState: UIControlState.Normal)
-        self.motivo4.setImage(UIImage(named:"prendido2"), forState: UIControlState.Normal)
-        self.motivo5.setImage(UIImage(named:"button-selected"), forState: UIControlState.Normal)
-        
-        if(!textOtro.text!.isEmpty){
-            strOtro = "&otro=\(textOtro.text!)"
-        }
-        
-    }
-
-    @IBAction func continuarCita(sender: UIButton) {
-        if motivo == 0 || fecha == nil || idDoctor == 0{
+    @IBAction func agregarEvento(sender: UIButton) {
+        //if descripcionEvento == nil{
+        if fecha == nil{
             let alerta = UIAlertController(title: "Datos incorrectos",
                                            message: "Usuario ó Password incorrecto",
                                            preferredStyle: UIAlertControllerStyle.Alert)
@@ -235,12 +120,14 @@ class AgregarEventoViewController: UIViewController,UIPickerViewDelegate,UIPicke
             })
             alerta.addAction(accion)
             self.presentViewController(alerta, animated: true, completion: nil)
-          
+            
         }else{
-            let url = NSURL(string: "http://hyperion.init-code.com/zungu/app/motivo.php")
+            //let url = NSURL(string: "http://hyperion.init-code.com/zungu/app/motivo.php")
+            let url = NSURL(string: "http://aguitech.com/samemoon/cobradores/ios_agregar_evento.php")
             let request = NSMutableURLRequest(URL: url!)
             request.HTTPMethod = "POST"
-            let body = "idv=\(idvet!)&idu=\(idu)&idd=\(idDoctor)&motivo=\(motivo)&fecha=\(fecha!)\(strOtro)"
+            //let body = "id_usuario=\(idu)&evento=\(nombreEvento)&descripcion=\(descripcionEvento)&fecha=\(fecha!)\(strOtro)"
+            let body = "id_usuario=\(idu)&evento=\(nombreEvento)&descripcion=\(descripcionEvento)&fecha=\(fecha)"
             print(body)
             request.HTTPBody = body.dataUsingEncoding(NSUTF8StringEncoding)
             
@@ -256,26 +143,26 @@ class AgregarEventoViewController: UIViewController,UIPickerViewDelegate,UIPicke
                                 return
                             }
                             
-                           let id = parseJson["id_cita"]
+                            let id = parseJson["id_evento"]
                             print("entro hasta aqui")
                             if id != nil {
-                                                               
+                                
                                 let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
                                 
-                                let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("CitaGuardada") as! CitaGuardadaViewController
-                                nextViewController.id_cita = id?.integerValue
+                                let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("Eventos") as! EventosViewController
+                                //nextViewController.id_cita = id?.integerValue
                                 self.presentViewController(nextViewController, animated:false, completion:nil)
                             }
-                           /*}else{
-                                let alerta = UIAlertController(title: "Usuario existente",
-                                    message: "Este correo ya existe",
-                                    preferredStyle: UIAlertControllerStyle.Alert)
-                                let accion = UIAlertAction(title: "Cerrar", style: UIAlertActionStyle.Default, handler: { (UIAlertAction) in
-                                    alerta.dismissViewControllerAnimated(true, completion: nil)
-                                })
-                                alerta.addAction(accion)
-                                self.presentViewController(alerta, animated: true, completion: nil)
-                            }*/
+                            /*}else{
+                             let alerta = UIAlertController(title: "Usuario existente",
+                             message: "Este correo ya existe",
+                             preferredStyle: UIAlertControllerStyle.Alert)
+                             let accion = UIAlertAction(title: "Cerrar", style: UIAlertActionStyle.Default, handler: { (UIAlertAction) in
+                             alerta.dismissViewControllerAnimated(true, completion: nil)
+                             })
+                             alerta.addAction(accion)
+                             self.presentViewController(alerta, animated: true, completion: nil)
+                             }*/
                             
                             
                         } catch{
@@ -289,8 +176,9 @@ class AgregarEventoViewController: UIViewController,UIPickerViewDelegate,UIPicke
                 }
             }).resume()
         }
+        
     }
-    
+    /*
     @IBAction func returnDetalle(sender: UIButton) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
@@ -298,6 +186,7 @@ class AgregarEventoViewController: UIViewController,UIPickerViewDelegate,UIPicke
         nextViewController.veterinaria = idvet!
         self.presentViewController(nextViewController, animated: false, completion: nil)
     }
+    */
     
     func keyboardWillShow(notification: NSNotification) {
         

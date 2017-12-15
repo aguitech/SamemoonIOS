@@ -40,6 +40,7 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource{
             //  Doesn't exist
         } else {
             
+            /*
             //let currentLevel = preferences.objectForKey(currentLevelKey)
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
             
@@ -48,6 +49,7 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource{
             
             
             return
+            */
         }
         
 
