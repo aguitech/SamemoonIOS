@@ -90,12 +90,49 @@ UINavigationControllerDelegate {
             imagePicker.sourceType = .Camera;
             imagePicker.allowsEditing = false
             self.presentViewController(imagePicker, animated: true, completion: nil)
+            
+            
+            
         }
+        
+        
+        
     }
+    @IBAction func guardarFoto(sender: AnyObject) {
+        var imageData = UIImageJPEGRepresentation(imagePicked.image!, 0.6)
+        var compressedJPGImage = UIImage(data: imageData!)
+        UIImageWriteToSavedPhotosAlbum(compressedJPGImage!, nil, nil, nil)
+        
+        var alert = UIAlertView(title: "Wow",
+                                message: "Your image has been saved to Photo Library!",
+                                delegate: nil,
+                                cancelButtonTitle: "Ok")
+        alert.show()
+    }
+    
     
     @IBAction func agregarCarrito(sender: UIButton) {
     }
     
+    @IBAction func abrirLibreria(sender: AnyObject) {
+        if UIImagePickerController.isSourceTypeAvailable(.PhotoLibrary) {
+            var imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .PhotoLibrary;
+            imagePicker.allowsEditing = true
+            self.presentViewController(imagePicker, animated: true, completion: nil)
+            
+        }
+    }
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        imagePicked.image = image
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+        //self.dismiss(animated:true, completion: nil)
+        //dismiss(animated:true, completion: nil)
+    }
     func cargarDatos(){
         //let url = NSURL(string: "http://hyperion.init-code.com/zungu/app/tienda.php?idt=\(idt!)")
         //let url = NSURL(string: "http://aguitech.com/samemoon/cobradores/ios_evento_detalle.php")
