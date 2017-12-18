@@ -1,5 +1,5 @@
 //
-//  AgendarCitaViewController.swift
+//  AgendarCitaViewController.swift/Users/hectoraguilar/Git/SamemoonIOS/samemoon/AgregarEventoViewController.swift
 //  zungu
 //
 //  Created by Giovanni Aranda on 27/09/16.
@@ -8,14 +8,16 @@
 
 import UIKit
 
-class AgregarEventoViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource {
+class AgregarEventoViewController: UIViewController {
     
     
     @IBOutlet weak var nombreEvento: UITextField!
     
     @IBOutlet weak var descripcionEvento: UITextField!
-    @IBOutlet weak var fechaPicker: UIDatePicker!
+    //@IBOutlet weak var fechaPicker: UIDatePicker!
     
+    //@IBOutlet weak var fechaPicker: UIDatePicker!
+    @IBOutlet weak var fechaEvento: UIDatePicker!
     
     //@IBOutlet weak var fechaPicker: UIDatePicker!
     /*
@@ -30,8 +32,6 @@ class AgregarEventoViewController: UIViewController,UIPickerViewDelegate,UIPicke
 
      */
     
-    var ArrayList = [[String: String]]()
-    let pickerView = UIPickerView()
     //var idvet:Int? = nil
     var idDoctor = 0
     var motivo = 0
@@ -48,9 +48,14 @@ class AgregarEventoViewController: UIViewController,UIPickerViewDelegate,UIPicke
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        /*
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(AgregarEventoViewController.keyboardWillShow(_:)), name: UIKeyboardWillShowNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(AgregarEventoViewController.keyboardWillHide(_:)), name: UIKeyboardWillHideNotification, object: nil)
+        
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(DetalleEventoViewController.keyboardWillHide)), name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(DetalleEventoViewController.keyboardWillHide(_:)), name: UIKeyboardWillHideNotification, object: nil)
+        
+        */
         
         if preferences.objectForKey(currentLevelKey) == nil {
         } else {
@@ -59,24 +64,13 @@ class AgregarEventoViewController: UIViewController,UIPickerViewDelegate,UIPicke
             idu = (array_usuario!["id_usuario"]!!.integerValue)!
             
         }
-       
-        pickerView.delegate = self
-        pickerView.backgroundColor = UIColor.whiteColor()
+        //Looks for single or multiple taps.
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         
-        let label = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width / 3, height: self.view.frame.size.height))
+        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+        //tap.cancelsTouchesInView = false
         
-        label.font = UIFont(name: "Helvetica", size: 12)
-        
-        label.backgroundColor = UIColor.clearColor()
-        
-        label.textColor = UIColor.whiteColor()
-        
-        label.text = "Selecciona uno"
-        
-        label.textAlignment = NSTextAlignment.Center
-        //cargaDatos()
-
-        // Do any additional setup after loading the view.
+        view.addGestureRecognizer(tap)
     }
     
     
@@ -85,33 +79,42 @@ class AgregarEventoViewController: UIViewController,UIPickerViewDelegate,UIPicke
         // Dispose of any resources that can be recreated.
     }
     
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
-        return 1
+    //Calls this function when the tap is recognized.
+    override func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return ArrayList.count
-    }
-    
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return ArrayList[row]["nombre"]
-    }
-    
-    
-   
-    
+    /*
     @IBAction func changeFecha(sender: UIDatePicker) {
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd' 'HH:mm:ss"
         let strDate = dateFormatter.stringFromDate(fechaPicker.date)
         self.fecha = strDate
     }
+     
+     
+     @IBAction func changeFecha(sender: UIDatePicker) {
+     let dateFormatter = NSDateFormatter()
+     dateFormatter.dateFormat = "yyyy-MM-dd' 'HH:mm:ss"
+     let strDate = dateFormatter.stringFromDate(fechaPicker.date)
+     self.fecha = strDate
+     }
+    */
     
     
+    @IBAction func cambiarFecha(sender: UIDatePicker) {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd' 'HH:mm:ss"
+        let strDate = dateFormatter.stringFromDate(fechaEvento.date)
+        self.fecha = strDate
+    }
     
     @IBAction func agregarEvento(sender: UIButton) {
         //if descripcionEvento == nil{
-        if fecha == nil{
+        //!textOtro.text!.isEmpty
+        if fecha == nil {
+            
             let alerta = UIAlertController(title: "Datos incorrectos",
                                            message: "Usuario ó Password incorrecto",
                                            preferredStyle: UIAlertControllerStyle.Alert)
@@ -121,13 +124,14 @@ class AgregarEventoViewController: UIViewController,UIPickerViewDelegate,UIPicke
             alerta.addAction(accion)
             self.presentViewController(alerta, animated: true, completion: nil)
             
+            
         }else{
             //let url = NSURL(string: "http://hyperion.init-code.com/zungu/app/motivo.php")
             let url = NSURL(string: "http://aguitech.com/samemoon/cobradores/ios_agregar_evento.php")
             let request = NSMutableURLRequest(URL: url!)
             request.HTTPMethod = "POST"
             //let body = "id_usuario=\(idu)&evento=\(nombreEvento)&descripcion=\(descripcionEvento)&fecha=\(fecha!)\(strOtro)"
-            let body = "id_usuario=\(idu)&evento=\(nombreEvento)&descripcion=\(descripcionEvento)&fecha=\(fecha)"
+            let body = "id_usuario=\(idu)&evento=\(nombreEvento.text!)&descripcion=\(descripcionEvento.text!)&fecha=\(fecha!)"
             print(body)
             request.HTTPBody = body.dataUsingEncoding(NSUTF8StringEncoding)
             
@@ -149,7 +153,7 @@ class AgregarEventoViewController: UIViewController,UIPickerViewDelegate,UIPicke
                                 
                                 let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
                                 
-                                let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("Eventos") as! EventosViewController
+                                let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("HomeView") as! HomeController
                                 //nextViewController.id_cita = id?.integerValue
                                 self.presentViewController(nextViewController, animated:false, completion:nil)
                             }
@@ -187,7 +191,6 @@ class AgregarEventoViewController: UIViewController,UIPickerViewDelegate,UIPicke
         self.presentViewController(nextViewController, animated: false, completion: nil)
     }
     */
-    
     func keyboardWillShow(notification: NSNotification) {
         
         if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.CGRectValue() {
@@ -211,6 +214,19 @@ class AgregarEventoViewController: UIViewController,UIPickerViewDelegate,UIPicke
             }
         }
     }
+
     
     
+}
+// Put this piece of code anywhere you like
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
 }
