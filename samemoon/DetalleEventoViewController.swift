@@ -98,6 +98,44 @@ UINavigationControllerDelegate {
         
         
     }
+    
+    @IBAction func tomarFotillo(sender: AnyObject) {
+        if UIImagePickerController.isSourceTypeAvailable(.Camera) {
+            var imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .Camera;
+            imagePicker.allowsEditing = false
+            self.presentViewController(imagePicker, animated: true, completion: nil)
+            
+            
+            
+            
+            if (self.imagePicked.image == nil || imagePicked.image == nil){
+                print("Doesn’t contain a value.")
+                
+                
+            } else {
+                
+                print("test")
+                
+                var imageData = UIImageJPEGRepresentation(imagePicked.image!, 0.6)
+                var compressedJPGImage = UIImage(data: imageData!)
+                UIImageWriteToSavedPhotosAlbum(compressedJPGImage!, nil, nil, nil)
+                
+                var alert = UIAlertView(title: "Wow",
+                                        message: "Your image has been saved to Photo Library!",
+                                        delegate: nil,
+                                        cancelButtonTitle: "Ok")
+                alert.show()
+
+            
+                print("Si existe.")
+            }
+            
+            
+            
+        }
+    }
     @IBAction func guardarFoto(sender: AnyObject) {
         var imageData = UIImageJPEGRepresentation(imagePicked.image!, 0.6)
         var compressedJPGImage = UIImage(data: imageData!)
@@ -128,7 +166,37 @@ UINavigationControllerDelegate {
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
         imagePicked.image = image
         
+        
+        
         self.dismissViewControllerAnimated(true, completion: nil)
+        
+        
+        
+        
+        
+        
+        if (self.imagePicked.image == nil || imagePicked.image == nil){
+            print("No Existe.")
+            
+            
+        } else {
+            
+            print("Si existe")
+            
+            var imageData = UIImageJPEGRepresentation(imagePicked.image!, 0.6)
+            var compressedJPGImage = UIImage(data: imageData!)
+            UIImageWriteToSavedPhotosAlbum(compressedJPGImage!, nil, nil, nil)
+            
+            var alert = UIAlertView(title: "Wow",
+                                    message: "Your image has been saved to Photo Library!",
+                                    delegate: nil,
+                                    cancelButtonTitle: "Ok")
+            alert.show()
+            
+            
+            print("Si existe.")
+        }
+        
         
         //self.dismiss(animated:true, completion: nil)
         //dismiss(animated:true, completion: nil)
