@@ -203,6 +203,7 @@
 		DC1C87B31DB98817004E3325 /* iconSexo.png in Resources */ = {isa = PBXBuildFile; fileRef = DC1C87B21DB98817004E3325 /* iconSexo.png */; };
 		DC1C87B61DB99BB5004E3325 /* agregarGrande.png in Resources */ = {isa = PBXBuildFile; fileRef = DC1C87B41DB99BB5004E3325 /* agregarGrande.png */; };
 		DC1C87B71DB99BB5004E3325 /* agregarMini.png in Resources */ = {isa = PBXBuildFile; fileRef = DC1C87B51DB99BB5004E3325 /* agregarMini.png */; };
+		DC6122201FE8CA90000515DB /* NSMutableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61221F1FE8CA90000515DB /* NSMutableData.swift */; };
 		DC61BBF31FBE1E6700F00889 /* EventosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61BBF21FBE1E6700F00889 /* EventosViewController.swift */; };
 		DC6608A11FCE904600CE6869 /* intro1.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6608A01FCE904600CE6869 /* intro1.png */; };
 		DC6608A31FCE909900CE6869 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6608A21FCE909900CE6869 /* splash.png */; };
@@ -426,6 +427,7 @@
 		DC1C87B21DB98817004E3325 /* iconSexo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconSexo.png; sourceTree = "<group>"; };
 		DC1C87B41DB99BB5004E3325 /* agregarGrande.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = agregarGrande.png; sourceTree = "<group>"; };
 		DC1C87B51DB99BB5004E3325 /* agregarMini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = agregarMini.png; sourceTree = "<group>"; };
+		DC61221F1FE8CA90000515DB /* NSMutableData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMutableData.swift; sourceTree = "<group>"; };
 		DC61BBF21FBE1E6700F00889 /* EventosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventosViewController.swift; sourceTree = "<group>"; };
 		DC6608A01FCE904600CE6869 /* intro1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intro1.png; sourceTree = "<group>"; };
 		DC6608A21FCE909900CE6869 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
@@ -734,6 +736,7 @@
 		38E5FD311D78B70D00FE95DD /* samemoon */ = {
 			isa = PBXGroup;
 			children = (
+				DC61221E1FE8CA68000515DB /* extension */,
 				386CAA571DB737D200B54FDD /* Framework Face */,
 				38F5C3421DAFE661007B6468 /* PopupController */,
 				389464EE1DA1D063004979D7 /* ViewController */,
@@ -757,6 +760,14 @@
 				38D11C851DB0648A00F39B75 /* popUpProximaViewController.swift */,
 			);
 			name = PopupController;
+			sourceTree = "<group>";
+		};
+		DC61221E1FE8CA68000515DB /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				DC61221F1FE8CA90000515DB /* NSMutableData.swift */,
+			);
+			name = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -994,6 +1005,7 @@
 				3889DA511D831D5C004B5A5C /* DetalleTiendaViewController.swift in Sources */,
 				389464EB1DA1CD29004979D7 /* OpcionesPagoViewController.swift in Sources */,
 				DCFD214F1DB877CA00E2CAF1 /* PagoTDCViewController.swift in Sources */,
+				DC6122201FE8CA90000515DB /* NSMutableData.swift in Sources */,
 				38E5FD561D78BB0B00FE95DD /* PagePantalla2Controller.swift in Sources */,
 				38D11C861DB0648A00F39B75 /* popUpProximaViewController.swift in Sources */,
 				38C770CD1D92EB0A00653FD2 /* ColMascCollectionViewCell.swift in Sources */,
