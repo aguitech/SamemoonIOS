@@ -2063,7 +2063,7 @@
                         <viewControllerLayoutGuide type="bottom" id="8Ak-NH-z29"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hGv-zy-hyj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="608"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="tituloProgramarMoonie.png" translatesAutoresizingMaskIntoConstraints="NO" id="VN2-md-7nr">
@@ -5610,14 +5610,14 @@
         <image name="tituloSamemoon.png" width="124" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="hY0-y2-sNR"/>
+        <segue reference="48o-D6-X3J"/>
         <segue reference="k5y-Or-Flx"/>
         <segue reference="kPC-0k-edi"/>
         <segue reference="ma5-Qx-n1E"/>
-        <segue reference="Vo5-H3-nft"/>
         <segue reference="Aac-eE-ETc"/>
-        <segue reference="Cdm-iD-bhH"/>
+        <segue reference="XVz-4h-JZs"/>
+        <segue reference="Vo5-H3-nft"/>
         <segue reference="dbj-uq-vpS"/>
-        <segue reference="hY0-y2-sNR"/>
-        <segue reference="48o-D6-X3J"/>
     </inferredMetricsTieBreakers>
 </document>

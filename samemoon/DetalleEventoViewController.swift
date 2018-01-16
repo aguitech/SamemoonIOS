@@ -167,6 +167,10 @@ UINavigationControllerDelegate {
             
         }else{
             
+            print(id_usuario);
+            print(idevento);
+            
+            
             var bodyGet = "id_usuario=\(id_usuario)&id_evento=\(idevento!)"
             bodyGet = bodyGet.stringByAddingPercentEncodingWithAllowedCharacters(.URLHostAllowedCharacterSet())!
             
