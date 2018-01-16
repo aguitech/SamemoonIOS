@@ -65,7 +65,6 @@ class HomeController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     func cargarDatos(){
         let url = NSURL(string: "http://aguitech.com/samemoon/cobradores/ios_eventos.php?tipo=\(tipo_)")
-        //let url = NSURL(string: "http://hyperion.init-code.com/zungu/app/veterinarios_mapa.php?tipo=\(tipo_)")
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) { (data, response, error) in
             if error != nil{
                 

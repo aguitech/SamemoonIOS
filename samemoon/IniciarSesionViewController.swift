@@ -166,7 +166,7 @@ class IniciarSesionViewController: UIViewController, FBSDKLoginButtonDelegate{
                                 print("Error parsing")
                                 return
                             }
-                            //print(json)
+                            print(json)
                             let id = parseJson["id_usuario"]
                             
                             if id != nil {

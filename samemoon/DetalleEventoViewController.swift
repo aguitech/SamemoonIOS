@@ -76,6 +76,11 @@ UINavigationControllerDelegate {
             let array_usuario = preferences.objectForKey(currentLevelKey)
             
             id_usuario = (array_usuario!["id_usuario"]!!.integerValue)!
+            
+            print("id_usuario 1");
+            print(id_usuario);
+            print("preferences");
+            print(preferences);
         }
         
         //print(idt);
@@ -166,8 +171,9 @@ UINavigationControllerDelegate {
             
             
         }else{
-            
+            print("id_evento");
             print(id_usuario);
+            print("id_evento");
             print(idevento);
             
             
@@ -184,11 +190,18 @@ UINavigationControllerDelegate {
             
             let param = [
                 "nuevo": "asd",
-                "id_usuario": "dsadsa",
-                "id_evento": "dsadsa"
+                "id_usuario": id_usuario,
+                "id_evento": idevento!
                 
             ]
             /*
+             let param = [
+             "nuevo": "asd",
+             "id_usuario": "dsadsa",
+             "id_evento": "dsadsa"
+             
+             ]
+             
              let param = [
              "nombre"  : self.nombreMascota.text!,
              "edad"    : self.edadRaza.text!,
