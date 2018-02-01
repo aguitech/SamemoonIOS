@@ -203,6 +203,7 @@
 		DC1C87B31DB98817004E3325 /* iconSexo.png in Resources */ = {isa = PBXBuildFile; fileRef = DC1C87B21DB98817004E3325 /* iconSexo.png */; };
 		DC1C87B61DB99BB5004E3325 /* agregarGrande.png in Resources */ = {isa = PBXBuildFile; fileRef = DC1C87B41DB99BB5004E3325 /* agregarGrande.png */; };
 		DC1C87B71DB99BB5004E3325 /* agregarMini.png in Resources */ = {isa = PBXBuildFile; fileRef = DC1C87B51DB99BB5004E3325 /* agregarMini.png */; };
+		DC3ADA6D201904330091D6C7 /* CanjearCodigoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3ADA6C201904330091D6C7 /* CanjearCodigoViewController.swift */; };
 		DC6122201FE8CA90000515DB /* NSMutableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61221F1FE8CA90000515DB /* NSMutableData.swift */; };
 		DC61BBF31FBE1E6700F00889 /* EventosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61BBF21FBE1E6700F00889 /* EventosViewController.swift */; };
 		DC6608A11FCE904600CE6869 /* intro1.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6608A01FCE904600CE6869 /* intro1.png */; };
@@ -430,6 +431,7 @@
 		DC1C87B21DB98817004E3325 /* iconSexo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconSexo.png; sourceTree = "<group>"; };
 		DC1C87B41DB99BB5004E3325 /* agregarGrande.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = agregarGrande.png; sourceTree = "<group>"; };
 		DC1C87B51DB99BB5004E3325 /* agregarMini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = agregarMini.png; sourceTree = "<group>"; };
+		DC3ADA6C201904330091D6C7 /* CanjearCodigoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanjearCodigoViewController.swift; sourceTree = "<group>"; };
 		DC61221F1FE8CA90000515DB /* NSMutableData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMutableData.swift; sourceTree = "<group>"; };
 		DC61BBF21FBE1E6700F00889 /* EventosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventosViewController.swift; sourceTree = "<group>"; };
 		DC6608A01FCE904600CE6869 /* intro1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intro1.png; sourceTree = "<group>"; };
@@ -553,6 +555,7 @@
 				38194BC51D7F165C008FAC36 /* VeterinariasViewController.swift */,
 				38194BDB1D7F5228008FAC36 /* VeterinariosDosViewController.swift */,
 				38E5FD341D78B70D00FE95DD /* ViewController.swift */,
+				DC3ADA6C201904330091D6C7 /* CanjearCodigoViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -1013,6 +1016,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC3ADA6D201904330091D6C7 /* CanjearCodigoViewController.swift in Sources */,
 				380E1A061D81C92400EF5A81 /* AgregarAdoptarViewController.swift in Sources */,
 				3889DA511D831D5C004B5A5C /* DetalleTiendaViewController.swift in Sources */,
 				389464EB1DA1CD29004979D7 /* OpcionesPagoViewController.swift in Sources */,

@@ -24,8 +24,8 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource{
         super.viewDidLoad()
         
         self.arrPageTitle = ["Encuentra el mejor veterinario para el cuidado de tu mascota","Adopta un amigo y cuida de él,ubica la mascota ideal para ti","Administra el perfil de tu mascota y compártelo con familiares y amigos","Administra el perfil de tu mascota y compártelo con familiares y amigos"]
-        self.arrPagePhoto = ["slider1","gif1","slider3","gif3"]
-        self.arrPageSlider = ["slide1","slide2","slide3","slide4"]
+        self.arrPagePhoto = ["slider1","slider2","slider3","slider1"]
+        self.arrPageSlider = ["slider1","slider2","slider3","slider1"]
         
         
         self.dataSource = self

@@ -30,6 +30,7 @@ class MenuViewController: UIViewController{
         let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("miPerfil") as! MiPerfilViewController
         self.presentViewController(nextViewController, animated:true, completion:nil)
     }
+    
     @IBAction func cerrarSesion(sender: UIButton) {
         let preferences = NSUserDefaults.standardUserDefaults()
         
@@ -47,6 +48,44 @@ class MenuViewController: UIViewController{
         let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("iniciarSesion") as! IniciarSesionViewController
         self.presentViewController(nextViewController, animated:true, completion:nil)
     }
+    
+    
+    /*
+     @IBAction func cerrarSesion(sender: UIButton) {
+     let preferences = NSUserDefaults.standardUserDefaults()
+     
+     let loginManager = FBSDKLoginManager()
+     loginManager.logOut()
+     
+     let arrayUsuarioKey = "arrayUsuario"
+     
+     _ = preferences.setObject(nil, forKey: arrayUsuarioKey)
+     
+     _ = preferences.synchronize()
+     
+     let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+     
+     let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("iniciarSesion") as! IniciarSesionViewController
+     self.presentViewController(nextViewController, animated:true, completion:nil)
+     }
+    @IBAction func cerrarSesion(sender: UIButton) {
+        let preferences = NSUserDefaults.standardUserDefaults()
+        
+        let loginManager = FBSDKLoginManager()
+        loginManager.logOut()
+        
+        let arrayUsuarioKey = "arrayUsuario"
+        
+        _ = preferences.setObject(nil, forKey: arrayUsuarioKey)
+        
+        _ = preferences.synchronize()
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("iniciarSesion") as! IniciarSesionViewController
+        self.presentViewController(nextViewController, animated:true, completion:nil)
+    }
+    */
     
     
 }

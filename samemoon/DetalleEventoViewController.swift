@@ -24,6 +24,10 @@ UINavigationControllerDelegate {
     @IBOutlet weak var tituloMoonie: UILabel!
     @IBOutlet weak var fechaHoraEvento: UILabel!
     @IBOutlet weak var usuariosInvitados: UILabel!
+    
+    
+    
+    
     /*
      @IBOutlet weak var tituloMoonie: UILabel!
      @IBOutlet weak var fechaHora: UILabel!
