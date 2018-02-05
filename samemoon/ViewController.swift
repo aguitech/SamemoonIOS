@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  zungu
+//  Samemoon
 //
-//  Created by Giovanni Aranda on 01/09/16.
-//  Copyright © 2016 Giovanni Aranda. All rights reserved.
+//  Created by Hector Aguilar on 01/Feb/18.
+//  Copyright © 2018 Hector Aguilar. All rights reserved.
 //
 
 import UIKit
@@ -23,9 +23,9 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.arrPageTitle = ["Encuentra el mejor veterinario para el cuidado de tu mascota","Adopta un amigo y cuida de él,ubica la mascota ideal para ti","Administra el perfil de tu mascota y compártelo con familiares y amigos","Administra el perfil de tu mascota y compártelo con familiares y amigos"]
-        self.arrPagePhoto = ["slider1","slider2","slider3","slider1"]
-        self.arrPageSlider = ["slider1","slider2","slider3","slider1"]
+        self.arrPageTitle = ["Titulo 1","Titulo 2","Titulo 3","Titulo 4"]
+        self.arrPagePhoto = ["bienvenida1","bienvenida2","bienvenida3","bienvenida4"]
+        self.arrPageSlider = ["slide1","slide2","slide3","slide1"]
         
         
         self.dataSource = self

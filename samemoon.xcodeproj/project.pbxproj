@@ -188,6 +188,13 @@
 		DC0406541DB7269D004B92BB /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0406471DB7269D004B92BB /* FBSDKShareKit.framework */; };
 		DC0406551DB7269D004B92BB /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC0406481DB7269D004B92BB /* LICENSE.txt */; };
 		DC0406561DB7269D004B92BB /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC0406491DB7269D004B92BB /* README.txt */; };
+		DC06A42A2027F73D0003C5C3 /* btnMenuCerrarSesion.png in Resources */ = {isa = PBXBuildFile; fileRef = DC06A4232027F73D0003C5C3 /* btnMenuCerrarSesion.png */; };
+		DC06A42B2027F73D0003C5C3 /* btnMenuEventos.png in Resources */ = {isa = PBXBuildFile; fileRef = DC06A4242027F73D0003C5C3 /* btnMenuEventos.png */; };
+		DC06A42C2027F73D0003C5C3 /* btnMenuGaleria.png in Resources */ = {isa = PBXBuildFile; fileRef = DC06A4252027F73D0003C5C3 /* btnMenuGaleria.png */; };
+		DC06A42D2027F73D0003C5C3 /* btnMenuIngresarCodigo.png in Resources */ = {isa = PBXBuildFile; fileRef = DC06A4262027F73D0003C5C3 /* btnMenuIngresarCodigo.png */; };
+		DC06A42E2027F73D0003C5C3 /* btnMenuProgramarMoonie.png in Resources */ = {isa = PBXBuildFile; fileRef = DC06A4272027F73D0003C5C3 /* btnMenuProgramarMoonie.png */; };
+		DC06A42F2027F73D0003C5C3 /* fondoMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = DC06A4282027F73D0003C5C3 /* fondoMenu.png */; };
+		DC06A4302027F73D0003C5C3 /* fotoMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = DC06A4292027F73D0003C5C3 /* fotoMenu.png */; };
 		DC12F37C1DB9A9D800AFB8F1 /* EditarPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC12F37B1DB9A9D800AFB8F1 /* EditarPerfilViewController.swift */; };
 		DC12F3831DB9D84800AFB8F1 /* iconPerfilUbicacion.png in Resources */ = {isa = PBXBuildFile; fileRef = DC12F37D1DB9D84800AFB8F1 /* iconPerfilUbicacion.png */; };
 		DC12F3841DB9D84800AFB8F1 /* iconPerfilSexo.png in Resources */ = {isa = PBXBuildFile; fileRef = DC12F37E1DB9D84800AFB8F1 /* iconPerfilSexo.png */; };
@@ -204,6 +211,11 @@
 		DC1C87B61DB99BB5004E3325 /* agregarGrande.png in Resources */ = {isa = PBXBuildFile; fileRef = DC1C87B41DB99BB5004E3325 /* agregarGrande.png */; };
 		DC1C87B71DB99BB5004E3325 /* agregarMini.png in Resources */ = {isa = PBXBuildFile; fileRef = DC1C87B51DB99BB5004E3325 /* agregarMini.png */; };
 		DC3ADA6D201904330091D6C7 /* CanjearCodigoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3ADA6C201904330091D6C7 /* CanjearCodigoViewController.swift */; };
+		DC5898E02023B70B003BF7D1 /* bienvenida1.gif in Resources */ = {isa = PBXBuildFile; fileRef = DC5898DF2023B70B003BF7D1 /* bienvenida1.gif */; };
+		DC5898E22023B96B003BF7D1 /* bienvenida2.gif in Resources */ = {isa = PBXBuildFile; fileRef = DC5898E12023B96B003BF7D1 /* bienvenida2.gif */; };
+		DC5898E6202444DE003BF7D1 /* bienvenida2.gif in Resources */ = {isa = PBXBuildFile; fileRef = DC5898E3202444DE003BF7D1 /* bienvenida2.gif */; };
+		DC5898E7202444DE003BF7D1 /* bienvenida3.gif in Resources */ = {isa = PBXBuildFile; fileRef = DC5898E4202444DE003BF7D1 /* bienvenida3.gif */; };
+		DC5898E8202444DE003BF7D1 /* bienvenida4.gif in Resources */ = {isa = PBXBuildFile; fileRef = DC5898E5202444DE003BF7D1 /* bienvenida4.gif */; };
 		DC6122201FE8CA90000515DB /* NSMutableData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61221F1FE8CA90000515DB /* NSMutableData.swift */; };
 		DC61BBF31FBE1E6700F00889 /* EventosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC61BBF21FBE1E6700F00889 /* EventosViewController.swift */; };
 		DC6608A11FCE904600CE6869 /* intro1.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6608A01FCE904600CE6869 /* intro1.png */; };
@@ -221,6 +233,10 @@
 		DC6F46951FCF467B00CF9AD7 /* btnListo.png in Resources */ = {isa = PBXBuildFile; fileRef = DC6F46931FCF467B00CF9AD7 /* btnListo.png */; };
 		DC735B571FD5270C0075521F /* campanita.png in Resources */ = {isa = PBXBuildFile; fileRef = DC735B561FD5270C0075521F /* campanita.png */; };
 		DC7DB8531E3FF426002A4657 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC7DB8521E3FF426002A4657 /* Images.xcassets */; };
+		DC878A4F2023AA850067055A /* bienvenida1.png in Resources */ = {isa = PBXBuildFile; fileRef = DC878A4B2023AA850067055A /* bienvenida1.png */; };
+		DC878A502023AA850067055A /* bienvenida2.png in Resources */ = {isa = PBXBuildFile; fileRef = DC878A4C2023AA850067055A /* bienvenida2.png */; };
+		DC878A512023AA850067055A /* bienvenida3.png in Resources */ = {isa = PBXBuildFile; fileRef = DC878A4D2023AA850067055A /* bienvenida3.png */; };
+		DC878A522023AA850067055A /* bienvenida4.png in Resources */ = {isa = PBXBuildFile; fileRef = DC878A4E2023AA850067055A /* bienvenida4.png */; };
 		DCA344921FCDD71400BDBD3B /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DCA344911FCDD71400BDBD3B /* logo.png */; };
 		DCA765B91FDA3CD500988317 /* DetalleEventoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA765B81FDA3CD500988317 /* DetalleEventoViewController.swift */; };
 		DCC8C4591FEB1D85004707A0 /* slider1.gif in Resources */ = {isa = PBXBuildFile; fileRef = DCC8C4581FEB1D85004707A0 /* slider1.gif */; };
@@ -416,6 +432,13 @@
 		DC0406471DB7269D004B92BB /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		DC0406481DB7269D004B92BB /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		DC0406491DB7269D004B92BB /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		DC06A4232027F73D0003C5C3 /* btnMenuCerrarSesion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnMenuCerrarSesion.png; sourceTree = "<group>"; };
+		DC06A4242027F73D0003C5C3 /* btnMenuEventos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnMenuEventos.png; sourceTree = "<group>"; };
+		DC06A4252027F73D0003C5C3 /* btnMenuGaleria.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnMenuGaleria.png; sourceTree = "<group>"; };
+		DC06A4262027F73D0003C5C3 /* btnMenuIngresarCodigo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnMenuIngresarCodigo.png; sourceTree = "<group>"; };
+		DC06A4272027F73D0003C5C3 /* btnMenuProgramarMoonie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnMenuProgramarMoonie.png; sourceTree = "<group>"; };
+		DC06A4282027F73D0003C5C3 /* fondoMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondoMenu.png; sourceTree = "<group>"; };
+		DC06A4292027F73D0003C5C3 /* fotoMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fotoMenu.png; sourceTree = "<group>"; };
 		DC12F37B1DB9A9D800AFB8F1 /* EditarPerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditarPerfilViewController.swift; sourceTree = "<group>"; };
 		DC12F37D1DB9D84800AFB8F1 /* iconPerfilUbicacion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconPerfilUbicacion.png; sourceTree = "<group>"; };
 		DC12F37E1DB9D84800AFB8F1 /* iconPerfilSexo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconPerfilSexo.png; sourceTree = "<group>"; };
@@ -432,6 +455,11 @@
 		DC1C87B41DB99BB5004E3325 /* agregarGrande.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = agregarGrande.png; sourceTree = "<group>"; };
 		DC1C87B51DB99BB5004E3325 /* agregarMini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = agregarMini.png; sourceTree = "<group>"; };
 		DC3ADA6C201904330091D6C7 /* CanjearCodigoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanjearCodigoViewController.swift; sourceTree = "<group>"; };
+		DC5898DF2023B70B003BF7D1 /* bienvenida1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bienvenida1.gif; sourceTree = "<group>"; };
+		DC5898E12023B96B003BF7D1 /* bienvenida2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bienvenida2.gif; sourceTree = "<group>"; };
+		DC5898E3202444DE003BF7D1 /* bienvenida2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bienvenida2.gif; sourceTree = "<group>"; };
+		DC5898E4202444DE003BF7D1 /* bienvenida3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bienvenida3.gif; sourceTree = "<group>"; };
+		DC5898E5202444DE003BF7D1 /* bienvenida4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bienvenida4.gif; sourceTree = "<group>"; };
 		DC61221F1FE8CA90000515DB /* NSMutableData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMutableData.swift; sourceTree = "<group>"; };
 		DC61BBF21FBE1E6700F00889 /* EventosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventosViewController.swift; sourceTree = "<group>"; };
 		DC6608A01FCE904600CE6869 /* intro1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = intro1.png; sourceTree = "<group>"; };
@@ -449,6 +477,10 @@
 		DC6F46931FCF467B00CF9AD7 /* btnListo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnListo.png; sourceTree = "<group>"; };
 		DC735B561FD5270C0075521F /* campanita.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = campanita.png; sourceTree = "<group>"; };
 		DC7DB8521E3FF426002A4657 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DC878A4B2023AA850067055A /* bienvenida1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bienvenida1.png; sourceTree = "<group>"; };
+		DC878A4C2023AA850067055A /* bienvenida2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bienvenida2.png; sourceTree = "<group>"; };
+		DC878A4D2023AA850067055A /* bienvenida3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bienvenida3.png; sourceTree = "<group>"; };
+		DC878A4E2023AA850067055A /* bienvenida4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bienvenida4.png; sourceTree = "<group>"; };
 		DCA344911FCDD71400BDBD3B /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		DCA765B81FDA3CD500988317 /* DetalleEventoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleEventoViewController.swift; sourceTree = "<group>"; };
 		DCC8C4581FEB1D85004707A0 /* slider1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = slider1.gif; sourceTree = "<group>"; };
@@ -563,6 +595,21 @@
 		38BC30621D9C4C35008DD592 /* imagen */ = {
 			isa = PBXGroup;
 			children = (
+				DC5898DF2023B70B003BF7D1 /* bienvenida1.gif */,
+				DC878A4B2023AA850067055A /* bienvenida1.png */,
+				DC5898E3202444DE003BF7D1 /* bienvenida2.gif */,
+				DC5898E4202444DE003BF7D1 /* bienvenida3.gif */,
+				DC5898E5202444DE003BF7D1 /* bienvenida4.gif */,
+				DC06A4232027F73D0003C5C3 /* btnMenuCerrarSesion.png */,
+				DC06A4242027F73D0003C5C3 /* btnMenuEventos.png */,
+				DC06A4252027F73D0003C5C3 /* btnMenuGaleria.png */,
+				DC06A4262027F73D0003C5C3 /* btnMenuIngresarCodigo.png */,
+				DC06A4272027F73D0003C5C3 /* btnMenuProgramarMoonie.png */,
+				DC06A4282027F73D0003C5C3 /* fondoMenu.png */,
+				DC06A4292027F73D0003C5C3 /* fotoMenu.png */,
+				DC878A4C2023AA850067055A /* bienvenida2.png */,
+				DC878A4D2023AA850067055A /* bienvenida3.png */,
+				DC878A4E2023AA850067055A /* bienvenida4.png */,
 				DCC8C45A1FEB1D8F004707A0 /* slider2.gif */,
 				DCC8C45B1FEB1D8F004707A0 /* slider3.gif */,
 				DCC8C4581FEB1D85004707A0 /* slider1.gif */,
@@ -648,6 +695,7 @@
 				38BC30A61D9C4C42008DD592 /* hospital.png */,
 				38F5C33C1DAEBC02007B6468 /* huella_cirulo.png */,
 				38BC30EF1D9C8E04008DD592 /* huella_gris.png */,
+				DC5898E12023B96B003BF7D1 /* bienvenida2.gif */,
 				389C9FBD1DAD38BF00A508EF /* huella-gris.png */,
 				3852EB671DB5416C00596D60 /* huella-ico-gde.png */,
 				3852EB651DB5416C00596D60 /* huella-ico-med.png */,
@@ -855,12 +903,14 @@
 				0453CDBE1DB6C387000552E4 /* slide3.png in Resources */,
 				38BC30CC1D9C4C42008DD592 /* establecimiento.png in Resources */,
 				38BC30C51D9C4C42008DD592 /* arana.png in Resources */,
+				DC5898E22023B96B003BF7D1 /* bienvenida2.gif in Resources */,
 				38BC30BA1D9C4C42008DD592 /* anuncios.png in Resources */,
 				DC12F38D1DB9F15900AFB8F1 /* btnTerminosCondiciones.png in Resources */,
 				3803DF7F1DB84783005E4BE3 /* plus-ico.png in Resources */,
 				38BC30E01D9C4C42008DD592 /* movil.png in Resources */,
 				0453CDBD1DB6C387000552E4 /* slide2.png in Resources */,
 				38BC30D91D9C4C42008DD592 /* regresar.png in Resources */,
+				DC06A42F2027F73D0003C5C3 /* fondoMenu.png in Resources */,
 				386CAA5B1DB73C4000B54FDD /* button-selected.png in Resources */,
 				38BC30CD1D9C4C42008DD592 /* corazon_verde.png in Resources */,
 				38304F1B1DB92C2400295DF0 /* relog-ico.png in Resources */,
@@ -875,9 +925,11 @@
 				DC6608B31FCEC41600CE6869 /* tituloProgramarMoonie.png in Resources */,
 				3852EB5A1DB53F1300596D60 /* reptil-ico.png in Resources */,
 				38BC30D11D9C4C42008DD592 /* star.png in Resources */,
+				DC878A512023AA850067055A /* bienvenida3.png in Resources */,
 				DC12F3861DB9D84800AFB8F1 /* iconPerfilContrasenia.png in Resources */,
 				DC6608AD1FCEAB5200CE6869 /* btnEnviar.png in Resources */,
 				DC04064E1DB7269D004B92BB /* FacebookSDKStrings.bundle in Resources */,
+				DC06A42D2027F73D0003C5C3 /* btnMenuIngresarCodigo.png in Resources */,
 				38BC30C11D9C4C42008DD592 /* roedor.png in Resources */,
 				DCA344921FCDD71400BDBD3B /* logo.png in Resources */,
 				DC6608A51FCE958C00CE6869 /* splash.png in Resources */,
@@ -895,9 +947,11 @@
 				38BC30DF1D9C4C42008DD592 /* mail_n.png in Resources */,
 				38BEFC471D8E5C6B002D7253 /* gif1.gif in Resources */,
 				DCFD214B1DB8741300E2CAF1 /* InstruccionesSPEI.png in Resources */,
+				DC878A502023AA850067055A /* bienvenida2.png in Resources */,
 				386CAA611DB7D00200B54FDD /* visa-ico-png.png in Resources */,
 				389C9FC41DAD535B00A508EF /* mapa_ubica_titulo.png in Resources */,
 				38BC30E11D9C4C42008DD592 /* expediente.png in Resources */,
+				DC5898E7202444DE003BF7D1 /* bienvenida3.gif in Resources */,
 				DC0406551DB7269D004B92BB /* LICENSE.txt in Resources */,
 				38BC30BF1D9C4C42008DD592 /* perro.png in Resources */,
 				38F5C33F1DAEBCBE007B6468 /* caracol.png in Resources */,
@@ -927,6 +981,7 @@
 				38304F1D1DB93E1E00295DF0 /* perro_icono.png in Resources */,
 				3878AABB1DA41C7D000816B6 /* lock.png in Resources */,
 				38BC30B81D9C4C42008DD592 /* doc-circulo1.png in Resources */,
+				DC878A4F2023AA850067055A /* bienvenida1.png in Resources */,
 				DC0406561DB7269D004B92BB /* README.txt in Resources */,
 				38BC30FC1D9D83E1008DD592 /* opciones_pago.png in Resources */,
 				38D11C841DB05B2F00F39B75 /* perrito-serviciospaseo.png in Resources */,
@@ -937,8 +992,10 @@
 				38BC30BC1D9C4C42008DD592 /* clinica_activado.png in Resources */,
 				DC7DB8531E3FF426002A4657 /* Images.xcassets in Resources */,
 				3852EB681DB5416C00596D60 /* huella-ico-med.png in Resources */,
+				DC5898E02023B70B003BF7D1 /* bienvenida1.gif in Resources */,
 				DC12F38C1DB9F15900AFB8F1 /* btnPoliticasPrivacidad.png in Resources */,
 				3878AABE1DA41D58000816B6 /* nombre.png in Resources */,
+				DC06A42C2027F73D0003C5C3 /* btnMenuGaleria.png in Resources */,
 				38BC30D41D9C4C42008DD592 /* cascabel.png in Resources */,
 				3852EB5C1DB53F1300596D60 /* insecto-ico.png in Resources */,
 				38BC30EE1D9C4C42008DD592 /* filtro-3.png in Resources */,
@@ -948,10 +1005,12 @@
 				38BC30E81D9C4C42008DD592 /* estetoscopio.png in Resources */,
 				38BC30E41D9C4C42008DD592 /* cerrar_menu.png in Resources */,
 				38BC30AF1D9C4C42008DD592 /* registro-mascotas.png in Resources */,
+				DC06A42A2027F73D0003C5C3 /* btnMenuCerrarSesion.png in Resources */,
 				38BC30D81D9C4C42008DD592 /* tienda.png in Resources */,
 				DC12F3881DB9D84800AFB8F1 /* iconPerfilNombre.png in Resources */,
 				DC12F3901DB9FC4900AFB8F1 /* avatarPerfil.png in Resources */,
 				38DC36C11DA2E74B002150DD /* dog-food-1.png in Resources */,
+				DC5898E6202444DE003BF7D1 /* bienvenida2.gif in Resources */,
 				DC12F3851DB9D84800AFB8F1 /* iconPerfilCumpleanios.png in Resources */,
 				38BC30CF1D9C4C42008DD592 /* yellow_star.png in Resources */,
 				38BC30E51D9C4C42008DD592 /* corazon.png in Resources */,
@@ -966,6 +1025,7 @@
 				38BC30EC1D9C4C42008DD592 /* hospital.png in Resources */,
 				3852EB541DB53C6300596D60 /* subir-camara-ico.png in Resources */,
 				38BC30C01D9C4C42008DD592 /* ave.png in Resources */,
+				DC878A522023AA850067055A /* bienvenida4.png in Resources */,
 				38F5C33D1DAEBC02007B6468 /* huella_cirulo.png in Resources */,
 				38D11C801DB0455D00F39B75 /* raton_juguete.jpg in Resources */,
 				38304F1F1DB9458600295DF0 /* slider-ico.png in Resources */,
@@ -975,7 +1035,9 @@
 				38BC30D31D9C4C42008DD592 /* mi_perfil.png in Resources */,
 				DC1C87B71DB99BB5004E3325 /* agregarMini.png in Resources */,
 				38304F191DB9294800295DF0 /* mapa-paseador.png in Resources */,
+				DC06A4302027F73D0003C5C3 /* fotoMenu.png in Resources */,
 				38304F131DB90FF800295DF0 /* paseador-servicio.png in Resources */,
+				DC06A42E2027F73D0003C5C3 /* btnMenuProgramarMoonie.png in Resources */,
 				38BEFC461D8E5C6B002D7253 /* gif3.gif in Resources */,
 				DCC8C4591FEB1D85004707A0 /* slider1.gif in Resources */,
 				38BC30E21D9C4C42008DD592 /* filtro-1.png in Resources */,
@@ -999,12 +1061,14 @@
 				DC1C87B61DB99BB5004E3325 /* agregarGrande.png in Resources */,
 				38BC30CE1D9C4C42008DD592 /* hora_consulta.png in Resources */,
 				38BC30E61D9C4C42008DD592 /* estetica.png in Resources */,
+				DC5898E8202444DE003BF7D1 /* bienvenida4.gif in Resources */,
 				38BC30C41D9C4C42008DD592 /* gatodos.png in Resources */,
 				38BC30EA1D9C4C42008DD592 /* cercademi.png in Resources */,
 				38BC30CB1D9C4C42008DD592 /* perfil.png in Resources */,
 				38304F171DB928B400295DF0 /* image-paseador.png in Resources */,
 				38BC30F31D9C8F0E008DD592 /* apagado.png in Resources */,
 				389464F21DA2B94C004979D7 /* cat-toy.png in Resources */,
+				DC06A42B2027F73D0003C5C3 /* btnMenuEventos.png in Resources */,
 				389C9FBE1DAD38BF00A508EF /* huella-gris.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

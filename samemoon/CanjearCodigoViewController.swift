@@ -12,7 +12,8 @@ import UIKit
 class CanjearCodigoViewController: UIViewController {
     
     
-    @IBOutlet weak var codigoCanjear: UITextField!
+    //@IBOutlet weak var codigoCanjear: UITextField!
+    @IBOutlet weak var txtCodigo: UITextField!
     
     
     
@@ -92,11 +93,8 @@ class CanjearCodigoViewController: UIViewController {
     
     
     
-    @IBAction func canjearCodigo(sender: UIButton) {
-        //if descripcionEvento == nil{
-        //!textOtro.text!.isEmpty
-        //if codigoCanjear == nil {
-        if codigoCanjear.text!.isEmpty {
+    @IBAction func canjeandoCodigo(sender: UIButton) {
+        if txtCodigo.text!.isEmpty {
             
             let alerta = UIAlertController(title: "Introduce un código",
                                            message: "Introduce un código",
@@ -109,13 +107,20 @@ class CanjearCodigoViewController: UIViewController {
             
             
         }else{
-            //let url = NSURL(string: "http://hyperion.init-code.com/zungu/app/motivo.php")
-            //let url = NSURL(string: "http://aguitech.com/samemoon/cobradores/ios_agregar_evento.php")
+            let alerta = UIAlertController(title: txtCodigo.text!,
+                                           message: txtCodigo.text!,
+                                           preferredStyle: UIAlertControllerStyle.Alert)
+            let accion = UIAlertAction(title: "Cerrar", style: UIAlertActionStyle.Default, handler: { (UIAlertAction) in
+                alerta.dismissViewControllerAnimated(true, completion: nil)
+            })
+            alerta.addAction(accion)
+            self.presentViewController(alerta, animated: true, completion: nil)
+            
+            
             let url = NSURL(string: "http://aguitech.com/samemoon/cobradores/ios_canjear_codigo.php")
             let request = NSMutableURLRequest(URL: url!)
             request.HTTPMethod = "POST"
-            //let body = "id_usuario=\(idu)&evento=\(nombreEvento)&descripcion=\(descripcionEvento)&fecha=\(fecha!)\(strOtro)"
-            let body = "id_usuario=\(idu)&codigo=\(codigoCanjear.text!)"
+            let body = "id_usuario=\(idu)&codigo=\(txtCodigo)"
             print(body)
             request.HTTPBody = body.dataUsingEncoding(NSUTF8StringEncoding)
             
@@ -132,13 +137,15 @@ class CanjearCodigoViewController: UIViewController {
                             }
                             
                             let id = parseJson["id_evento"]
-                            print("entro hasta aqui")
+                            print("entro hasta aqui uju")
                             if id != nil {
                                 
                                 let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
                                 
-                                let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("HomeView") as! HomeController
-                                //nextViewController.id_cita = id?.integerValue
+                                //let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("CitaGuardada") as! CitaGuardadaViewController
+                                //let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("Eventos") as! EventosViewController
+                                let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("Home") as! HomeController
+                                //nextViewController.id_evento = id?.integerValue
                                 self.presentViewController(nextViewController, animated:false, completion:nil)
                             }
                             /*}else{
@@ -166,7 +173,36 @@ class CanjearCodigoViewController: UIViewController {
         }
     }
     
+    
     /*
+     
+     @IBAction func canjearCodigo(sender: UIButton) {
+     //if descripcionEvento == nil{
+     //!textOtro.text!.isEmpty
+     //if codigoCanjear == nil {
+     if codigoCanjear.text!.isEmpty {
+     
+     let alerta = UIAlertController(title: "Introduce un código",
+     message: "Introduce un código",
+     preferredStyle: UIAlertControllerStyle.Alert)
+     let accion = UIAlertAction(title: "Cerrar", style: UIAlertActionStyle.Default, handler: { (UIAlertAction) in
+     alerta.dismissViewControllerAnimated(true, completion: nil)
+     })
+     alerta.addAction(accion)
+     self.presentViewController(alerta, animated: true, completion: nil)
+     
+     
+     }else{
+     
+     }
+     }
+     
+     
+     , reason: '-[samemoon.CanjearCodigoViewController canjearCodigoWithSender:]: unrecognized selector sent to instance 0x175f7820'
+     *** First throw call stack:
+     
+     
+     
      @IBAction func returnDetalle(sender: UIButton) {
      let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
      
