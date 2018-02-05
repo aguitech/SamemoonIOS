@@ -1145,7 +1145,7 @@
                                     <color key="titleColor" red="0.019607843137254902" green="0.83921568627450982" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="JJ9-7e-V6q" kind="show" id="7UW-VX-BUw"/>
+                                    <segue destination="9ng-nv-Ac2" kind="show" id="j2F-fb-fWC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ReD-eT-4kO">
@@ -1155,7 +1155,7 @@
                                     <color key="titleColor" red="0.019607843137254902" green="0.83921568627450982" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="JJ9-7e-V6q" kind="show" id="YXN-69-ccr"/>
+                                    <segue destination="url-yj-1vH" kind="show" id="Ht5-fH-XIm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcV-ry-bva">
@@ -1164,22 +1164,16 @@
                                 <state key="normal" title="Eventos programados">
                                     <color key="titleColor" red="0.019607843137254902" green="0.83921568627450982" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="9ng-nv-Ac2" kind="show" id="Oq1-eM-rwS"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hw-cN-ZHp">
-                                <frame key="frameInset" minX="67" minY="283" width="288" height="30"/>
+                                <frame key="frameInset" minX="67" minY="278" width="288" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Galería de &quot;Mis moonies&quot;">
                                     <color key="titleColor" red="0.019607843137254902" green="0.83921568627450982" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="url-yj-1vH" kind="show" id="BdU-WK-FfZ"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNY-Qh-y34">
-                                <frame key="frameInset" minX="67" minY="316" width="288" height="30"/>
+                                <frame key="frameInset" minX="67" minY="311" width="288" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cerrar sesión">
                                     <color key="titleColor" red="0.019607843137254902" green="0.83921568627450982" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
@@ -1195,30 +1189,66 @@
                                 <color key="textColor" red="0.019607843137254902" green="0.83921568627450982" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btnMenuProgramarMoonie.png" translatesAutoresizingMaskIntoConstraints="NO" id="5PZ-J7-D0V">
-                                <frame key="frameInset" minX="25" minY="176" width="23" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btnMenuIngresarCodigo.png" translatesAutoresizingMaskIntoConstraints="NO" id="wFE-Qi-xSE">
-                                <frame key="frameInset" minX="25" minY="211" width="23" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btnMenuEventos.png" translatesAutoresizingMaskIntoConstraints="NO" id="g5u-Zf-gSq">
-                                <frame key="frameInset" minX="25" minY="247" width="23" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btnMenuGaleria.png" translatesAutoresizingMaskIntoConstraints="NO" id="fEg-fC-l0v">
-                                <frame key="frameInset" minX="25" minY="283" width="23" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="btnMenuCerrarSesion.png" translatesAutoresizingMaskIntoConstraints="NO" id="bw8-kE-J8o">
-                                <frame key="frameInset" minX="25" minY="320" width="23" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fondoMenu.png" translatesAutoresizingMaskIntoConstraints="NO" id="a2g-6C-2n9">
                                 <frame key="frameInset" minY="20" width="320" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fotoMenu.png" translatesAutoresizingMaskIntoConstraints="NO" id="JUo-bB-kco">
+                                <frame key="frameInset" minX="25" minY="52" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LxT-mq-mLs">
+                                <frame key="frameInset" minX="113" minY="52" width="191" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2u1-q2-vaq">
+                                <frame key="frameInset" minX="113" minY="81" width="191" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nT7-ae-Qfa">
+                                <frame key="frameInset" minX="25" minY="177" width="23" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="btnMenuProgramarMoonie.png"/>
+                                <connections>
+                                    <segue destination="9ng-nv-Ac2" kind="show" id="bcQ-5w-IEB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLG-OU-mCX">
+                                <frame key="frameInset" minX="25" minY="211" width="23" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="btnMenuIngresarCodigo.png"/>
+                                <connections>
+                                    <segue destination="url-yj-1vH" kind="show" id="7ij-wf-Nq8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DU-yu-T9S">
+                                <frame key="frameInset" minX="25" minY="247" width="23" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="btnMenuEventos.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dC9-Fg-IRO">
+                                <frame key="frameInset" minX="25" minY="282" width="23" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="btnMenuGaleria.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCW-cv-5fk">
+                                <frame key="frameInset" minX="25" minY="315" width="23" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="btnMenuCerrarSesion.png"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ajustes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2U-t4-dQf">
+                                <frame key="frameInset" minX="113" minY="110" width="65" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -5672,6 +5702,7 @@
         <image name="flecha_verde.png" width="51" height="51"/>
         <image name="flecha_verdeizq.png" width="51" height="51"/>
         <image name="fondoMenu.png" width="379" height="172"/>
+        <image name="fotoMenu.png" width="64" height="64"/>
         <image name="gato.png" width="54" height="54"/>
         <image name="gatobebe.jpg" width="359" height="281"/>
         <image name="home_menu.png" width="49" height="46"/>
@@ -5713,14 +5744,14 @@
         <image name="tituloSamemoon.png" width="124" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YXN-69-ccr"/>
-        <segue reference="Cdm-iD-bhH"/>
-        <segue reference="Oq1-eM-rwS"/>
-        <segue reference="Y2v-hA-qLo"/>
         <segue reference="kPC-0k-edi"/>
+        <segue reference="Y2v-hA-qLo"/>
         <segue reference="5qW-L7-9g0"/>
         <segue reference="k5y-Or-Flx"/>
         <segue reference="pSy-ez-05N"/>
+        <segue reference="7ij-wf-Nq8"/>
+        <segue reference="Cdm-iD-bhH"/>
+        <segue reference="j2F-fb-fWC"/>
         <segue reference="48o-D6-X3J"/>
     </inferredMetricsTieBreakers>
 </document>
