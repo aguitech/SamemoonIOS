@@ -195,6 +195,7 @@
 		DC06A42E2027F73D0003C5C3 /* btnMenuProgramarMoonie.png in Resources */ = {isa = PBXBuildFile; fileRef = DC06A4272027F73D0003C5C3 /* btnMenuProgramarMoonie.png */; };
 		DC06A42F2027F73D0003C5C3 /* fondoMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = DC06A4282027F73D0003C5C3 /* fondoMenu.png */; };
 		DC06A4302027F73D0003C5C3 /* fotoMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = DC06A4292027F73D0003C5C3 /* fotoMenu.png */; };
+		DC06A4322028DA200003C5C3 /* eventosClickAqui.png in Resources */ = {isa = PBXBuildFile; fileRef = DC06A4312028DA200003C5C3 /* eventosClickAqui.png */; };
 		DC12F37C1DB9A9D800AFB8F1 /* EditarPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC12F37B1DB9A9D800AFB8F1 /* EditarPerfilViewController.swift */; };
 		DC12F3831DB9D84800AFB8F1 /* iconPerfilUbicacion.png in Resources */ = {isa = PBXBuildFile; fileRef = DC12F37D1DB9D84800AFB8F1 /* iconPerfilUbicacion.png */; };
 		DC12F3841DB9D84800AFB8F1 /* iconPerfilSexo.png in Resources */ = {isa = PBXBuildFile; fileRef = DC12F37E1DB9D84800AFB8F1 /* iconPerfilSexo.png */; };
@@ -242,6 +243,11 @@
 		DCC8C4591FEB1D85004707A0 /* slider1.gif in Resources */ = {isa = PBXBuildFile; fileRef = DCC8C4581FEB1D85004707A0 /* slider1.gif */; };
 		DCC8C45C1FEB1D8F004707A0 /* slider2.gif in Resources */ = {isa = PBXBuildFile; fileRef = DCC8C45A1FEB1D8F004707A0 /* slider2.gif */; };
 		DCC8C45D1FEB1D8F004707A0 /* slider3.gif in Resources */ = {isa = PBXBuildFile; fileRef = DCC8C45B1FEB1D8F004707A0 /* slider3.gif */; };
+		DCD04CA120297CFE00174EAB /* btnAceptar.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD04C9C20297CFD00174EAB /* btnAceptar.png */; };
+		DCD04CA220297CFE00174EAB /* btnCamara.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD04C9D20297CFE00174EAB /* btnCamara.png */; };
+		DCD04CA320297CFE00174EAB /* btnCompartir.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD04C9E20297CFE00174EAB /* btnCompartir.png */; };
+		DCD04CA420297CFE00174EAB /* btnEnviarCodigo.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD04C9F20297CFE00174EAB /* btnEnviarCodigo.png */; };
+		DCD04CA520297CFE00174EAB /* btnLuna.png in Resources */ = {isa = PBXBuildFile; fileRef = DCD04CA020297CFE00174EAB /* btnLuna.png */; };
 		DCFD214A1DB8741300E2CAF1 /* fondoFormasPago.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFD21481DB8741300E2CAF1 /* fondoFormasPago.png */; };
 		DCFD214B1DB8741300E2CAF1 /* InstruccionesSPEI.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFD21491DB8741300E2CAF1 /* InstruccionesSPEI.png */; };
 		DCFD214E1DB877CA00E2CAF1 /* PagoSPEIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFD214C1DB877CA00E2CAF1 /* PagoSPEIViewController.swift */; };
@@ -439,6 +445,7 @@
 		DC06A4272027F73D0003C5C3 /* btnMenuProgramarMoonie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnMenuProgramarMoonie.png; sourceTree = "<group>"; };
 		DC06A4282027F73D0003C5C3 /* fondoMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondoMenu.png; sourceTree = "<group>"; };
 		DC06A4292027F73D0003C5C3 /* fotoMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fotoMenu.png; sourceTree = "<group>"; };
+		DC06A4312028DA200003C5C3 /* eventosClickAqui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eventosClickAqui.png; sourceTree = "<group>"; };
 		DC12F37B1DB9A9D800AFB8F1 /* EditarPerfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditarPerfilViewController.swift; sourceTree = "<group>"; };
 		DC12F37D1DB9D84800AFB8F1 /* iconPerfilUbicacion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconPerfilUbicacion.png; sourceTree = "<group>"; };
 		DC12F37E1DB9D84800AFB8F1 /* iconPerfilSexo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconPerfilSexo.png; sourceTree = "<group>"; };
@@ -486,6 +493,11 @@
 		DCC8C4581FEB1D85004707A0 /* slider1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = slider1.gif; sourceTree = "<group>"; };
 		DCC8C45A1FEB1D8F004707A0 /* slider2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = slider2.gif; sourceTree = "<group>"; };
 		DCC8C45B1FEB1D8F004707A0 /* slider3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = slider3.gif; sourceTree = "<group>"; };
+		DCD04C9C20297CFD00174EAB /* btnAceptar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnAceptar.png; sourceTree = "<group>"; };
+		DCD04C9D20297CFE00174EAB /* btnCamara.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnCamara.png; sourceTree = "<group>"; };
+		DCD04C9E20297CFE00174EAB /* btnCompartir.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnCompartir.png; sourceTree = "<group>"; };
+		DCD04C9F20297CFE00174EAB /* btnEnviarCodigo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnEnviarCodigo.png; sourceTree = "<group>"; };
+		DCD04CA020297CFE00174EAB /* btnLuna.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnLuna.png; sourceTree = "<group>"; };
 		DCFD21481DB8741300E2CAF1 /* fondoFormasPago.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondoFormasPago.png; sourceTree = "<group>"; };
 		DCFD21491DB8741300E2CAF1 /* InstruccionesSPEI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InstruccionesSPEI.png; sourceTree = "<group>"; };
 		DCFD214C1DB877CA00E2CAF1 /* PagoSPEIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagoSPEIViewController.swift; sourceTree = "<group>"; };
@@ -640,6 +652,7 @@
 				DC12F38B1DB9F15900AFB8F1 /* btnGuardarCambios.png */,
 				DC12F3891DB9F15900AFB8F1 /* btnPoliticasPrivacidad.png */,
 				DC12F38A1DB9F15900AFB8F1 /* btnTerminosCondiciones.png */,
+				DC06A4312028DA200003C5C3 /* eventosClickAqui.png */,
 				386CAA591DB73C4000B54FDD /* button-selected.png */,
 				386CAA5C1DB7D00100B54FDD /* button-selected2.png */,
 				38F5C33E1DAEBCBE007B6468 /* caracol.png */,
@@ -648,6 +661,11 @@
 				389C9FBF1DAD38F100A508EF /* casita-verde.png */,
 				389464F11DA2B94C004979D7 /* cat-toy.png */,
 				38BC30A41D9C4C42008DD592 /* cercademi.png */,
+				DCD04C9C20297CFD00174EAB /* btnAceptar.png */,
+				DCD04C9D20297CFE00174EAB /* btnCamara.png */,
+				DCD04C9E20297CFE00174EAB /* btnCompartir.png */,
+				DCD04C9F20297CFE00174EAB /* btnEnviarCodigo.png */,
+				DCD04CA020297CFE00174EAB /* btnLuna.png */,
 				38BC309E1D9C4C42008DD592 /* cerrar_menu.png */,
 				38BC30801D9C4C42008DD592 /* cita_doc.png */,
 				38BC30901D9C4C42008DD592 /* citas.png */,
@@ -892,6 +910,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38BC30DB1D9C4C42008DD592 /* filtro-4.png in Resources */,
+				DCD04CA320297CFE00174EAB /* btnCompartir.png in Resources */,
 				38BC30C61D9C4C42008DD592 /* cita_doc.png in Resources */,
 				38BC30D01D9C4C42008DD592 /* flecha_verdeizq.png in Resources */,
 				38BC30E91D9C4C42008DD592 /* filtro-5.png in Resources */,
@@ -910,6 +929,7 @@
 				38BC30E01D9C4C42008DD592 /* movil.png in Resources */,
 				0453CDBD1DB6C387000552E4 /* slide2.png in Resources */,
 				38BC30D91D9C4C42008DD592 /* regresar.png in Resources */,
+				DCD04CA420297CFE00174EAB /* btnEnviarCodigo.png in Resources */,
 				DC06A42F2027F73D0003C5C3 /* fondoMenu.png in Resources */,
 				386CAA5B1DB73C4000B54FDD /* button-selected.png in Resources */,
 				38BC30CD1D9C4C42008DD592 /* corazon_verde.png in Resources */,
@@ -940,6 +960,7 @@
 				38BC30DA1D9C4C42008DD592 /* menu_dog.png in Resources */,
 				38BC30B91D9C4C42008DD592 /* agregar.png in Resources */,
 				38304F101DB90FF800295DF0 /* establecimientos-servicio.png in Resources */,
+				DC06A4322028DA200003C5C3 /* eventosClickAqui.png in Resources */,
 				38BC30CA1D9C4C42008DD592 /* peces.png in Resources */,
 				386CAA5A1DB73C4000B54FDD /* prendido2.png in Resources */,
 				38BC30C81D9C4C42008DD592 /* gato.png in Resources */,
@@ -991,6 +1012,7 @@
 				389C9FC01DAD38F100A508EF /* casita-verde.png in Resources */,
 				38BC30BC1D9C4C42008DD592 /* clinica_activado.png in Resources */,
 				DC7DB8531E3FF426002A4657 /* Images.xcassets in Resources */,
+				DCD04CA120297CFE00174EAB /* btnAceptar.png in Resources */,
 				3852EB681DB5416C00596D60 /* huella-ico-med.png in Resources */,
 				DC5898E02023B70B003BF7D1 /* bienvenida1.gif in Resources */,
 				DC12F38C1DB9F15900AFB8F1 /* btnPoliticasPrivacidad.png in Resources */,
@@ -1016,6 +1038,7 @@
 				38BC30E51D9C4C42008DD592 /* corazon.png in Resources */,
 				38BC30B11D9C4C42008DD592 /* home2.png in Resources */,
 				3803DF7E1DB84783005E4BE3 /* menos-ico.png in Resources */,
+				DCD04CA220297CFE00174EAB /* btnCamara.png in Resources */,
 				38F5C3411DAFE5CB007B6468 /* corazon_sin_fondo.png in Resources */,
 				38E5FD3D1D78B70D00FE95DD /* LaunchScreen.storyboard in Resources */,
 				38BC30DE1D9C4C42008DD592 /* stethoscope_menu.png in Resources */,
@@ -1049,6 +1072,7 @@
 				38BC30E31D9C4C42008DD592 /* flecha_menu.png in Resources */,
 				DC6F46951FCF467B00CF9AD7 /* btnListo.png in Resources */,
 				38BC30DC1D9C4C42008DD592 /* home_menu.png in Resources */,
+				DCD04CA520297CFE00174EAB /* btnLuna.png in Resources */,
 				38BC30AC1D9C4C42008DD592 /* intro.png in Resources */,
 				DC735B571FD5270C0075521F /* campanita.png in Resources */,
 				38BC30E71D9C4C42008DD592 /* filtro-2.png in Resources */,

@@ -1,9 +1,9 @@
 //
-//  DetalleTiendaViewController.swift
-//  zungu
+//  DetalleEventoViewController.swift
+//  Samemoon
 //
-//  Created by Giovanni Aranda on 09/09/16.
-//  Copyright © 2016 Giovanni Aranda. All rights reserved.
+//  Created by Héctor Aguilar on 09/09/16.
+//  Copyright © 2018 Héctor Aguilar. All rights reserved.
 //
 
 import UIKit
@@ -26,7 +26,9 @@ UINavigationControllerDelegate {
     @IBOutlet weak var usuariosInvitados: UILabel!
     
     
+    @IBOutlet weak var botonAceptar: UIButton!
     
+    @IBOutlet weak var botonTomarFoto: UIButton!
     
     /*
      @IBOutlet weak var tituloMoonie: UILabel!
@@ -73,8 +75,10 @@ UINavigationControllerDelegate {
         
         btnAgregar.layer.cornerRadius = 6
         
-        
+        button2.hidden = true
         */
+        botonAceptar.hidden = true
+        
         if preferences.objectForKey(currentLevelKey) == nil {
         } else {
             let array_usuario = preferences.objectForKey(currentLevelKey)
@@ -108,7 +112,9 @@ UINavigationControllerDelegate {
             imagePicker.delegate = self
             imagePicker.sourceType = .Camera;
             imagePicker.allowsEditing = false
+            //self.presentViewController(imagePicker, animated: true, completion: nil)
             self.presentViewController(imagePicker, animated: true, completion: nil)
+            //
             
             
             
@@ -312,6 +318,9 @@ UINavigationControllerDelegate {
                                     cancelButtonTitle: "Ok")
             alert.show()
             
+            
+            botonAceptar.hidden = false;
+            botonTomarFoto.hidden = true;
             
             print("Si existe.")
         }
