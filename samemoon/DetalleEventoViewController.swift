@@ -312,12 +312,14 @@ UINavigationControllerDelegate {
             var compressedJPGImage = UIImage(data: imageData!)
             UIImageWriteToSavedPhotosAlbum(compressedJPGImage!, nil, nil, nil)
             
+            /*
+             Alerta
             var alert = UIAlertView(title: "Wow",
                                     message: "Your image has been saved to Photo Library!",
                                     delegate: nil,
                                     cancelButtonTitle: "Ok")
             alert.show()
-            
+            */
             
             botonAceptar.hidden = false;
             botonTomarFoto.hidden = true;
