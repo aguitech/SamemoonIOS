@@ -5557,30 +5557,6 @@
                                     <action selector="accederCamara:" destination="Imh-aG-NHK" eventType="touchUpInside" id="8EY-eM-psT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ovx-YE-zJD">
-                                <frame key="frameInset" minX="227" minY="402" width="77" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Guardar"/>
-                                <connections>
-                                    <action selector="guardarFoto:" destination="Imh-aG-NHK" eventType="touchUpInside" id="ux5-B8-2eX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DpA-1K-lnm">
-                                <frame key="frameInset" minX="-2" minY="402" width="99" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Abrir Galería"/>
-                                <connections>
-                                    <action selector="abrirLibreria:" destination="Imh-aG-NHK" eventType="touchUpInside" id="vuY-iW-JAU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOr-oV-t7A">
-                                <frame key="frameInset" minX="258" minY="196" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="tomarFotillo:" destination="Imh-aG-NHK" eventType="touchUpInside" id="fQT-Aa-aw8"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RU-G0-Ccg">
                                 <frame key="frameInset" minX="-2" minY="196" width="159" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
